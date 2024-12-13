@@ -1,10 +1,8 @@
 {
-  // See https://go.microsoft.com/fwlink/?LinkId=733558
-  // for the documentation about the tasks.json format
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run Client",
+      "label": "Client",
       "type": "shell",
       "command": "npm start",
       "options": {
@@ -12,7 +10,7 @@
       }
     },
     {
-      "label": "Run Comments",
+      "label": "Comments",
       "type": "shell",
       "command": "npm start",
       "options": {
@@ -20,7 +18,7 @@
       }
     },
     {
-      "label": "Run Event Bus",
+      "label": "Event Bus",
       "type": "shell",
       "command": "npm start",
       "options": {
@@ -28,7 +26,7 @@
       }
     },
     {
-      "label": "Run Moderation",
+      "label": "Moderation",
       "type": "shell",
       "command": "npm start",
       "options": {
@@ -36,7 +34,7 @@
       }
     },
     {
-      "label": "Run Posts",
+      "label": "Posts",
       "type": "shell",
       "command": "npm start",
       "options": {
@@ -44,7 +42,7 @@
       }
     },
     {
-      "label": "Run Query",
+      "label": "Query",
       "type": "shell",
       "command": "npm start",
       "options": {
@@ -52,15 +50,15 @@
       }
     },
     {
-      "label": "Run All Services",
+      "label": "All Services",
       "type": "shell",
       "dependsOn": [
-        "Run Client",
-        "Run Comments",
-        "Run Event Bus",
-        "Run Moderation",
-        "Run Posts",
-        "Run Query"
+        "Client",
+        "Comments",
+        "Event Bus",
+        "Moderation",
+        "Posts",
+        "Query"
       ],
       "dependsOrder": "parallel",
       "group": {
