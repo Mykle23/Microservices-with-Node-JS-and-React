@@ -9,7 +9,7 @@ spec:
       app: auth
   template:
     metadata:
-      matchLabels: 
+      labels: 
         app: auth
     spec:
       containers:
@@ -23,6 +23,7 @@ metadata:
 spec:
   selector:
     app: auth
+  type: ClusterIP
   ports:
     - name: auth
       protocol: TCP
