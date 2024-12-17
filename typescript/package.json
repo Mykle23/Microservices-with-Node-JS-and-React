@@ -1,0 +1,19 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "- Instalar prettier\r - Ejecutar prettier cad vez que se guarda un archivo ``` Buscar en settings format on save, y seleccionarlo```\r - Buscar en setting single quotes ```Mismo proceso anterior```\r - Buscar tab size poner en 2 ```mismo proceso```",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "undici-types": "^6.20.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  }
+}
