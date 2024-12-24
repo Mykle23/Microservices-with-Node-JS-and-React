@@ -9,7 +9,7 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "setpuFilesAfterEnv": [
+    "setupFilesAfterEnv": [
       "./src/test/setup.ts"
     ]
   },
