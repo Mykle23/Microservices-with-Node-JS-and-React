@@ -13,7 +13,6 @@ it('clears the cookie after signing out', async () => {
     .post('/api/users/signout')
     .send({})
     .expect(200);
-  console.log(response.get('Set-Cookie'));
 
   const cookie = response.get('Set-Cookie');
   if (!cookie) {
