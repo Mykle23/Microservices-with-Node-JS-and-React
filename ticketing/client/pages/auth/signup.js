@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Router from 'next/router';
 import useRequest from '../../hooks/use-request';
 const SignUp = () => {
   const [email, setEmail] = useState('');
@@ -10,12 +11,13 @@ const SignUp = () => {
       email,
       password,
     },
+    onSuccess: () => Router.push('/'),
   });
 
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    doRequest();
+    await doRequest();
   };
   return (
     <form onSubmit={onSubmit}>
