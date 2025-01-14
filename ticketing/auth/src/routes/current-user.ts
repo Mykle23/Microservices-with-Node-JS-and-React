@@ -1,6 +1,6 @@
 import express from 'express';
-import { currentUser } from '../middlewares/current-user';
-import { requireAuth } from '../middlewares/require-auth';
+import { currentUser } from '@mykleticketing/common';
+// import { requireAuth } from '@mykleticketing/common';
 
 const router = express.Router();
 
